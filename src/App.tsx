@@ -1,10 +1,19 @@
 import './App.css'
+import { BrowserRouter } from 'react-router-dom'
+import { Ruteo } from './app/utilidades/rutas/Ruteo'
+import { Cabecera } from './app/componentes/contenedor/Cabecera'
 
 function App() {  
 
   return (
     <>
-     <div>Punto de acceso a la aplicación...</div>
+     <div>P
+      <BrowserRouter>
+       <Cabecera />
+
+       <Ruteo/>
+      </BrowserRouter>
+     </div>
     </>
   )
 }

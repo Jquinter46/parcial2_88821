@@ -1,8 +1,10 @@
-export const Inicio = ()=>{
-    return(
-        <>
-        Soy el Inicio <br />
-        Como el de Bienvenida...
-        </>
-    )
-}
+export const Inicio = () => {
+  return (
+    <>
+      <br />
+      <br />
+      Soy el Inicio <br />
+      Como el de Bienvenida...
+    </>
+  );
+};
