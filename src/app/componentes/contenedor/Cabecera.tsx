@@ -44,12 +44,12 @@ export const Cabecera = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <NavLink className="dropdown-item" to="/cancre">
+                    <NavLink className="dropdown-item" to="/Arcrear">
                       Registrar Artistas
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to="/canlis">
+                    <NavLink className="dropdown-item" to="/Arlist">
                       Listar Artistas
                     </NavLink>
                   </li>
@@ -57,7 +57,7 @@ export const Cabecera = () => {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to="/canadmin">
+                    <NavLink className="dropdown-item" to="/Armin">
                       Administrar Artistas
                       
                     </NavLink>
@@ -66,22 +66,12 @@ export const Cabecera = () => {
               </li>
 
               <li className="nav-item">
-                <NavLink className="nav-link" to="/acer">
+                <NavLink className="nav-link" to="/acerca">
                   Acerca de
                 </NavLink>
               </li>
             </ul>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-light" type="submit">
-                Search
-              </button>
-            </form>
+            
           </div>
         </div>
       </nav>

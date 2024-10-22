@@ -1,25 +1,25 @@
 import { Route, Routes } from "react-router-dom";
 
 import { Inicio } from "../../componentes/contenedor/Inicio";
-import { CancionCrear } from "../../componentes/canciones/CancionCrear";
-import { CancionListar } from "../../componentes/canciones/CancionListar";
-import { CancionAdmin } from "../../componentes/canciones/CancionAdmin";
-import { CancionActualizar } from "../../componentes/canciones/CancionActualizar";
 import { NoEncontrado } from "../../componentes/contenedor/NoEncontrado";
 import { Acerca } from "../../componentes/otros/Acerca";
+import { ArtistasCrear } from "../../componentes/Artistas/ArtistasCrear";
+import { ArtistasListar } from "../../componentes/Artistas/ArtistasListar";
+import { ArtistasAdmin } from "../../componentes/Artistas/ArtistasAdmin";
+import { ArtistasActualizar } from "../../componentes/Artistas/ArtistasActualizar";
 
 export const Ruteo = () => {
   return (
     <Routes>
       <Route path="/" element={<Inicio />} />
 
-      <Route path="/cancre" element={< CancionCrear/>}/>
-      <Route path="/canlis" element={< CancionListar/>}/>
-      <Route path="/canadmin" element={< CancionAdmin/>}/>
+      <Route path="/Arcrear" element={< ArtistasCrear/>}/>
+      <Route path="/Arlist" element={< ArtistasListar/>}/>
+      <Route path="/Armin" element={< ArtistasAdmin/>}/>
 
-      <Route path="/canact/:codigo" element={< CancionActualizar/>}/>
+      <Route path="/canact/:codigo" element={< ArtistasActualizar/>}/>
 
-      <Route path="acer" element={< Acerca/>}/>
+      <Route path="acerca" element={< Acerca/>}/>
 
       <Route path="*" element={< NoEncontrado/>}/>
     </Routes>
