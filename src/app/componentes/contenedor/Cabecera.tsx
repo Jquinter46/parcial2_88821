@@ -24,12 +24,12 @@ export const Cabecera = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <NavLink className="nav-link active" aria-current="page" to="/">
-                  Home
+                  Inicio
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="*">
-                  Features
+                  Conciertos
                 </NavLink>
               </li>
               <li className="nav-item dropdown">
@@ -40,7 +40,7 @@ export const Cabecera = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Pricing
+                  Artistas
                 </a>
                 <ul className="dropdown-menu">
                   <li>
@@ -67,7 +67,7 @@ export const Cabecera = () => {
 
               <li className="nav-item">
                 <NavLink className="nav-link" to="/acer">
-                  About
+                  Acerca de
                 </NavLink>
               </li>
             </ul>
