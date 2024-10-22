@@ -4,13 +4,13 @@ import { Container, Card, Button, Carousel } from 'react-bootstrap';
 export const Inicio: React.FC = () => {
   return (
     <>
-      {/* Sección de bienvenida */}
+      {/**/}
       <Container className="p-4 bg-light text-center">
         <h1>Bienvenido a Star Concerts</h1>
         <p>Los mejores conciertos a tu alcance</p>
       </Container>
 
-      {/* Tarjeta de ejemplo */}
+      {/**/}
       <Container className="mt-4">
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src="/concierto.jpg" alt="Concierto" />
@@ -24,7 +24,7 @@ export const Inicio: React.FC = () => {
         </Card>
       </Container>
 
-      {/* Carrusel sencillo */}
+      {/**/}
       <Container className="mt-5">
         <Carousel>
           <Carousel.Item>
