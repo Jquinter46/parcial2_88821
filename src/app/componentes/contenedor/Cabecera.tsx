@@ -1,11 +1,14 @@
+import { NavLink } from "react-router-dom";
+import milogo from "../../../assets/img/icono3.jpeg"
+
 export const Cabecera = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+          <NavLink className="navbar-brand" to="/">
+            <img src={milogo} alt="El logo" />
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -20,14 +23,14 @@ export const Cabecera = () => {
           <div className="collapse navbar-collapse" id="navbarColor02">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Inicio
-                </a>
+                <NavLink className="nav-link active" aria-current="page" to="/">
+                  Home
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Compositores
-                </a>
+                <NavLink className="nav-link" to="*">
+                  Features
+                </NavLink>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -37,35 +40,35 @@ export const Cabecera = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Canciones
+                  Pricing
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Registrar canciones
-                    </a>
+                    <NavLink className="dropdown-item" to="/cancre">
+                      Registrar Artistas
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Listar canciones
-                    </a>
+                    <NavLink className="dropdown-item" to="/canlis">
+                      Listar Artistas
+                    </NavLink>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Administrar canciones
+                    <NavLink className="dropdown-item" to="/canadmin">
+                      Administrar Artistas
                       
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Acerca de
-                </a>
+                <NavLink className="nav-link" to="/acer">
+                  About
+                </NavLink>
               </li>
             </ul>
             <form className="d-flex" role="search">
